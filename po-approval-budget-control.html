@@ -79,46 +79,6 @@
     }
     </script>
 
-    <!-- JSON-LD Structured Data: Videos -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        "name": "Request to PO Approval, Vendor Invoice Approval & Xero Sync",
-        "description": "A quick walkthrough of request to PO approval, PO approval, vendor invoice approval, and sync to Xero in ApprovalPro.",
-        "thumbnailUrl": "https://i.ytimg.com/vi/2UDtXiasiMA/hqdefault.jpg",
-        "embedUrl": "https://www.youtube.com/embed/2UDtXiasiMA",
-        "contentUrl": "https://www.youtube.com/watch?v=2UDtXiasiMA",
-        "publisher": {
-            "@type": "Organization",
-            "name": "ApprovalPro",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://approvalpro.ai/assets/logo.png"
-            }
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        "name": "Multi-Tier Approval, Vendor Bill Approval, Budget Control & Xero Sync",
-        "description": "A walkthrough of multi-tier approval, vendor bill approval, budget control, and sync to Xero in ApprovalPro.",
-        "thumbnailUrl": "https://i.ytimg.com/vi/kG1Ddy7dBZ8/hqdefault.jpg",
-        "embedUrl": "https://www.youtube.com/embed/kG1Ddy7dBZ8",
-        "contentUrl": "https://www.youtube.com/watch?v=kG1Ddy7dBZ8",
-        "publisher": {
-            "@type": "Organization",
-            "name": "ApprovalPro",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://approvalpro.ai/assets/logo.png"
-            }
-        }
-    }
-    </script>
-
     <style>
 * {
     margin: 0;
@@ -343,87 +303,6 @@ a {
     flex-wrap: wrap;
 }
 
-/* Showcase (video + text) sections */
-.showcase {
-    padding: 3rem 1rem;
-}
-
-.showcase-alt {
-    background: #f8f9fa;
-}
-
-.showcase-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
-
-.showcase-container.reverse {
-    flex-direction: row-reverse;
-}
-
-.showcase-media {
-    flex: 1.1;
-    min-width: 0;
-}
-
-.showcase-content {
-    flex: 1;
-    min-width: 300px;
-}
-
-.showcase-content h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-}
-
-.showcase-content > p {
-    color: #4B5563;
-    margin-bottom: 1.25rem;
-}
-
-.showcase-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.65rem;
-}
-
-.showcase-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-    font-size: 0.95rem;
-    color: var(--text-color);
-}
-
-.showcase-list li i {
-    color: var(--primary-color);
-    margin-top: 0.25rem;
-    flex-shrink: 0;
-}
-
-.video-embed {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    background: #000;
-}
-
-.video-embed iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
 /* Features Section */
 .features {
     padding: 3rem 1rem;
@@ -610,12 +489,6 @@ a {
         height: 32px;
     }
 
-    .showcase-container,
-    .showcase-container.reverse {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
     .feature-grid {
         grid-template-columns: 1fr;
     }
@@ -677,48 +550,6 @@ a {
                 <div class="cta-group">
                     <a href="https://app.tikadata.com/approvalpro-sign-up" class="cta-button">Get Started Free</a>
                     <a href="index.html#pricing" class="cta-button-outline">See Pricing</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video 1: Request to PO Approval -->
-        <section class="showcase" aria-labelledby="request-to-po-heading">
-            <div class="showcase-container">
-                <div class="showcase-media">
-                    <div class="video-embed">
-                        <iframe src="https://www.youtube.com/embed/2UDtXiasiMA" title="Request to PO Approval, Vendor Invoice Approval & Xero Sync &mdash; ApprovalPro Walkthrough" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
-                </div>
-                <div class="showcase-content">
-                    <h2 id="request-to-po-heading">Request to PO Approval, Vendor Invoice Approval &amp; Xero Sync</h2>
-                    <p>Watch a quick walkthrough of the full document lifecycle in ApprovalPro &mdash; from an employee's purchase request, through PO approval, to vendor invoice approval, and syncing back to Xero automatically.</p>
-                    <ul class="showcase-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Turn a Purchase Request into a PO in one click</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Configurable approval chains for Purchase Orders</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Vendor invoice matching and approval</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Two-way sync to Xero once approved</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video 2: Multi-Tier Approval & Budget Control -->
-        <section class="showcase showcase-alt" aria-labelledby="multi-tier-heading">
-            <div class="showcase-container reverse">
-                <div class="showcase-media">
-                    <div class="video-embed">
-                        <iframe src="https://www.youtube.com/embed/kG1Ddy7dBZ8" title="Multi-Tier Approval, Vendor Bill Approval, Budget Control & Xero Sync &mdash; ApprovalPro Walkthrough" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
-                </div>
-                <div class="showcase-content">
-                    <h2 id="multi-tier-heading">Multi-Tier Approval, Vendor Bill Approval &amp; Budget Control</h2>
-                    <p>See how multi-level approval chains, vendor bill approval, and real-time budget control work together &mdash; so nothing posts to Xero unless it's approved and within budget.</p>
-                    <ul class="showcase-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Sequential or parallel multi-tier approval chains</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Route by amount threshold, department, or document type</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Real-time budget tracking against every request</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Complete audit trail synced to Xero</li>
-                    </ul>
                 </div>
             </div>
         </section>
