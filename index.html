@@ -47,7 +47,7 @@
         "logo": "https://approvalpro.ai/assets/logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
-            "email": "raka@tikadata.com",
+            "email": "raka@approvalpro.ai",
             "contactType": "sales"
         }
     }
@@ -1299,7 +1299,7 @@ a {
                         <li><i class="fas fa-check" aria-hidden="true"></i> Dedicated account manager</li>
                         <li><i class="fas fa-check" aria-hidden="true"></i> SLA guarantee</li>
                     </ul>
-                    <a href="mailto:raka@tikadata.com" class="cta-button-outline" style="text-align: center;">Contact Sales</a>
+                    <a href="mailto:raka@approvalpro.ai" class="cta-button-outline" style="text-align: center;">Contact Sales</a>
                 </div>
             </div>
         </section>
@@ -1376,7 +1376,7 @@ a {
                 </p>
                 <p class="contact-detail">
                     <i class="fas fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:raka@tikadata.com">raka@tikadata.com</a>
+                    <a href="mailto:raka@approvalpro.ai">raka@approvalpro.ai</a>
                 </p>
             </address>
         </section>
@@ -1402,7 +1402,7 @@ a {
                     <div class="footer-heading">Company</div>
                     <ul class="footer-links">
                         <li><a href="#contact-section">Contact Us</a></li>
-                        <li><a href="mailto:raka@tikadata.com">Support</a></li>
+                        <li><a href="mailto:raka@approvalpro.ai">Support</a></li>
                         <li><a href="https://app.tikadata.com/approvalpro-sign-in">Login</a></li>
                         <li><a href="https://app.tikadata.com/approvalpro-sign-up">Sign Up Free</a></li>
                     </ul>
@@ -1429,6 +1429,25 @@ a {
                 this.setAttribute('aria-expanded', 'true');
             }
         });
+    });
+    </script>
+
+    <!-- Cal.com Floating Scheduler Button -->
+    <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30min", { origin: "https://cal.com" });
+
+    Cal.ns["30min"]("floatingButton", {
+        "calLink": "made-raka-ufbdv1/30min",
+        "config": { "layout": "month_view", "overlayCalendar": "true" },
+        "buttonText": "Schedule a Meeting",
+        "buttonColor": "#FF6B00",
+        "buttonTextColor": "#ffffff"
+    });
+    Cal.ns["30min"]("ui", {
+        "cssVarsPerTheme": { "light": { "cal-brand": "#FF6B00" }, "dark": { "cal-brand": "#FF6B00" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
     });
     </script>
 </body>
