@@ -332,18 +332,35 @@ a {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: transparent;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 4px;
     margin-top: 1rem;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #d1d5db;
     transition: all 0.3s ease;
     font-weight: 500;
 }
 
 .cta-button-outline:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
     color: white;
+}
+
+.cta-button-dark {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.cta-button-dark:hover {
+    background-color: #003a75;
 }
 
 /* Hero Section */
@@ -750,7 +767,8 @@ a {
 }
 
 .pricing-card .cta-button,
-.pricing-card .cta-button-outline {
+.pricing-card .cta-button-outline,
+.pricing-card .cta-button-dark {
     text-align: center;
     margin-top: auto;
     width: 100%;
@@ -1028,7 +1046,7 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .navbar-right .cta-button {
+    .navbar-right .cta-button-dark {
         display: none;
     }
 }
@@ -1058,7 +1076,7 @@ a {
                 </div>
                 <div class="navbar-right">
                     <a href="https://app.tikadata.com/approvalpro-sign-in" class="nav-link">Login</a>
-                    <a href="https://app.tikadata.com/approvalpro-sign-up" class="cta-button" style="margin-top:0; padding: 0.5rem 1rem; font-size: 0.9rem;" rel="noopener">Sign Up Free</a>
+                    <a href="https://app.tikadata.com/approvalpro-sign-up" class="cta-button-dark" style="margin-top:0; padding: 0.5rem 1rem; font-size: 0.9rem;" rel="noopener">Sign Up Free</a>
                 </div>
             </div>
         </nav>
@@ -1441,7 +1459,7 @@ a {
         "calLink": "made-raka-ufbdv1/30min",
         "config": { "layout": "month_view", "overlayCalendar": "true" },
         "buttonText": "Schedule a Meeting",
-        "buttonColor": "#FF6B00",
+        "buttonColor": "#001F3F",
         "buttonTextColor": "#ffffff"
     });
     Cal.ns["30min"]("ui", {
