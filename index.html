@@ -365,7 +365,8 @@ a {
 
 /* Hero Section */
 .hero {
-    padding: 2rem 2rem;
+    padding: 2rem 0 2rem 2rem;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -373,12 +374,12 @@ a {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .hero-content {
-    flex: 0.8;
-    min-width: 400px;
+    flex: 0 0 420px;
+    min-width: 320px;
 }
 
 .hero h1 {
@@ -397,18 +398,19 @@ a {
 }
 
 .hero-visual {
-    flex: 1.2;
-    max-width: 560px;
-    margin-left: auto;
+    flex: 1;
+    min-width: 0;
+    margin-right: calc(-50vw + 50%);
 }
 
 .hero-screenshot {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-right: none;
+    box-shadow: -12px 12px 32px rgba(0,0,0,0.15);
 }
 
 /* Benefits / Why Choose Section */
@@ -905,8 +907,16 @@ a {
     }
 
     .hero-visual {
+        flex: 1;
+        width: 100%;
         max-width: 100%;
-        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-screenshot {
+        border-radius: 8px;
+        border-right: 1px solid #e5e7eb;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
 
     .hero h1 {
