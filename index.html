@@ -657,6 +657,17 @@ a {
     flex-shrink: 0;
 }
 
+.showcase-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.showcase-link:hover {
+    color: var(--primary-hover);
+}
+
 .video-embed {
     position: relative;
     width: 100%;
@@ -922,7 +933,7 @@ a {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1.3fr 1fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -1260,6 +1271,10 @@ a {
     .flow-step:not(:last-child)::after {
         display: none;
     }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1581,12 +1596,13 @@ a {
                         <li><i class="fas fa-check-circle" aria-hidden="true"></i> Real-time budget tracking against every request</li>
                         <li><i class="fas fa-check-circle" aria-hidden="true"></i> Two-way sync to Xero once approved</li>
                     </ul>
+                    <a href="multi-tier-approval-workflow.html" class="showcase-link">Learn how multi-tier approval works &rarr;</a>
                 </div>
             </div>
         </section>
 
         <!-- Video: Auto-Capture Vendor Invoice -->
-        <section class="showcase" aria-labelledby="auto-capture-heading">
+        <section class="showcase" id="auto-capture" aria-labelledby="auto-capture-heading">
             <div class="showcase-container">
                 <div class="showcase-media">
                     <div class="video-embed">
@@ -1824,10 +1840,19 @@ a {
                         </a>
                     </div>
                 </div>
+                <nav aria-label="Footer feature links">
+                    <div class="footer-heading">Features</div>
+                    <ul class="footer-links">
+                        <li><a href="multi-tier-approval-workflow.html">Multi-Tier Approval Workflow</a></li>
+                        <li><a href="po-approval-budget-control.html">Purchase Request &amp; PO Approval</a></li>
+                        <li><a href="#features">Supplier Bill Approval</a></li>
+                        <li><a href="#budget">Budget Control</a></li>
+                        <li><a href="#auto-capture">AI Invoice Capture</a></li>
+                    </ul>
+                </nav>
                 <nav aria-label="Footer product links">
                     <div class="footer-heading">Product</div>
                     <ul class="footer-links">
-                        <li><a href="#features">Features</a></li>
                         <li><a href="#how-it-works">How It Works</a></li>
                         <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#faq">FAQ</a></li>
