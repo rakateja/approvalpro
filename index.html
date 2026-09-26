@@ -80,18 +80,15 @@
         "offers": [
             {
                 "@type": "Offer",
-                "name": "Starter",
+                "name": "Free Forever",
                 "price": "0",
                 "priceCurrency": "USD",
-                "description": "Free forever - up to 5 users, 1 connection, single-level approvals"
+                "description": "Up to 5 users, 5 documents per month, multi-tier approval, 1 Xero or QuickBooks connection"
             },
             {
                 "@type": "Offer",
-                "name": "Professional",
-                "price": "35",
-                "priceCurrency": "USD",
-                "billingIncrement": "P1M",
-                "description": "Unlimited users, unlimited connections, multi-level approvals, custom routing rules"
+                "name": "Partner Package",
+                "description": "Custom pricing for partners - approval workflows for vendor bills, purchase orders, journal entries and more, budget checks before approval, auto-capture, and custom routing rules"
             }
         ],
         "aggregateRating": {
@@ -208,7 +205,7 @@
                 "name": "What documents can I approve with ApprovalPro?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You can approve Purchase Requests, Purchase Orders, and Bills (vendor invoices). Credit Notes, Debit Notes, Payment Requests, and Expense Reports are coming soon."
+                    "text": "You can approve Purchase Requests, Purchase Orders, and Bills (vendor invoices) on the Free plan. The Partner Package adds Journal Entries and other document types. Credit Notes, Debit Notes, Payment Requests, and Expense Reports are coming soon."
                 }
             },
             {
@@ -216,7 +213,7 @@
                 "name": "Can I set up multi-level approval workflows?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. With the Professional plan, you can configure sequential or parallel multi-level approval chains with as many levels as needed. Route approvals by amount thresholds, departments, document type, or custom conditions."
+                    "text": "Yes. Multi-tier approval is included even on the Free plan, so you can configure sequential or parallel approval chains with as many levels as needed. Custom routing rules by amount, department, or document type are available with the Partner Package."
                 }
             },
             {
@@ -224,7 +221,7 @@
                 "name": "Is there a free plan?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. The Starter plan is free forever and includes up to 5 users, 1 Xero or QuickBooks connection, 5 documents to approve, single-level approvals, and email notifications."
+                    "text": "Yes. The Free plan is free forever and includes up to 5 users, 1 Xero or QuickBooks connection, 5 documents per month, multi-tier approval, and email notifications."
                 }
             },
             {
@@ -754,9 +751,9 @@ a {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     align-items: stretch;
 }
@@ -773,20 +770,6 @@ a {
 
 .pricing-card.featured {
     border: 2px solid var(--primary-color);
-}
-
-.pricing-label {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--primary-color);
-    color: white;
-    padding: 0.15rem 0.75rem;
-    border-radius: 100px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    white-space: nowrap;
 }
 
 .pricing-tier {
@@ -1415,59 +1398,40 @@ a {
         <!-- Pricing -->
         <section class="pricing" id="pricing" aria-label="Pricing plans">
             <h2>ApprovalPro Pricing</h2>
-            <p class="pricing-subtitle">Start free. Upgrade as your team and approval needs grow.</p>
+            <p class="pricing-subtitle">Start free. Partner with us for full approval coverage.</p>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-tier">Starter</div>
-                    <h3>For Small Teams</h3>
-                    <p class="pricing-description">Connect one Xero or QuickBooks organization with essential approval workflows.</p>
+                    <div class="pricing-tier">Free Forever</div>
+                    <h3>For Small Teams Getting Started</h3>
+                    <p class="pricing-description">Multi-tier approval for a small team &mdash; no credit card required.</p>
                     <div class="pricing-amount">
                         <span class="price">Free</span>
                         <span class="price-period">&nbsp;forever</span>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check" aria-hidden="true"></i> Up to 5 users</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 5 documents per month</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Multi-tier approval</li>
                         <li><i class="fas fa-check" aria-hidden="true"></i> 1 Xero or QuickBooks connection</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> 5 Documents (PR, PO or Vendor Bill) to Approve</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Single-level approvals</li>
                         <li><i class="fas fa-check" aria-hidden="true"></i> Email notifications</li>
                     </ul>
                     <a href="https://app.tikadata.com/approvalpro-sign-up" class="cta-button-outline" style="text-align: center;">Get Started Free</a>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="pricing-label">Most Popular</div>
-                    <div class="pricing-tier">Professional</div>
-                    <h3>For Growing Businesses</h3>
-                    <p class="pricing-description">Full document support with Xero &amp; QuickBooks sync for growing teams.</p>
+                    <div class="pricing-tier">Partner Package</div>
+                    <h3>Full Approval Coverage for Growing Teams</h3>
+                    <p class="pricing-description">Approve every document type and add budget control, auto-capture, and custom routing as your workflows grow.</p>
                     <div class="pricing-amount">
-                        <span class="price">$35</span>
-                        <span class="price-period">/month</span>
+                        <span class="price">Let&rsquo;s Talk</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Unlimited users</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Unlimited Xero or QB connections</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Unlimited Documents to Approve</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Multi-level approvals</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Vendor Bill, PO, Journal Entry &amp; more document types</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Budget check before approval</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Auto-capture vendor bills</li>
                         <li><i class="fas fa-check" aria-hidden="true"></i> Custom routing rules</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Priority support</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Priority access to new features</li>
                     </ul>
-                    <a href="https://app.tikadata.com/approvalpro-sign-up" class="cta-button" style="text-align: center;">Start Free Trial</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-tier">Enterprise</div>
-                    <h3>For Large Organizations</h3>
-                    <p class="pricing-description">Advanced controls, multiple entities, and dedicated support for enterprise needs.</p>
-                    <div class="pricing-amount">
-                        <span class="price">Custom</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Everything in Professional</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Multi-entity management</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Custom workflows &amp; API access</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Dedicated account manager</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> SLA guarantee</li>
-                    </ul>
-                    <a href="mailto:raka@approvalpro.ai" class="cta-button-outline" style="text-align: center;">Contact Sales</a>
+                    <a href="mailto:raka@approvalpro.ai" class="cta-button" style="text-align: center;">Talk to Us</a>
                 </div>
             </div>
         </section>
@@ -1491,7 +1455,7 @@ a {
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>You can approve <strong>Purchase Requests</strong>, <strong>Purchase Orders</strong>, and <strong>Bills</strong> (vendor invoices). Support for Credit Notes, Debit Notes, Payment Requests, and Expense Reports is coming soon.</p>
+                        <p>You can approve <strong>Purchase Requests</strong>, <strong>Purchase Orders</strong>, and <strong>Bills</strong> (vendor invoices) on the Free plan. The <strong>Partner Package</strong> adds Journal Entries and other document types. Credit Notes, Debit Notes, Payment Requests, and Expense Reports are coming soon.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1500,7 +1464,7 @@ a {
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. With the Professional plan, you can configure sequential or parallel multi-level approval chains with as many levels as needed. Route approvals by amount thresholds, departments, document type, or custom conditions you define.</p>
+                        <p>Yes. <strong>Multi-tier approval is included even on the Free plan</strong> &mdash; configure sequential or parallel approval chains with as many levels as needed. Custom routing rules by amount, department, or document type are available with the Partner Package.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1509,7 +1473,7 @@ a {
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. The <strong>Starter plan is free forever</strong> and includes up to 5 users, 1 Xero or QuickBooks connection, 5 documents to approve, single-level approvals, and email notifications. No credit card required.</p>
+                        <p>Yes. The <strong>Free plan is free forever</strong> and includes up to 5 users, 1 Xero or QuickBooks connection, 5 documents per month, multi-tier approval, and email notifications. No credit card required.</p>
                     </div>
                 </div>
                 <div class="faq-item">
